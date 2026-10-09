@@ -1,0 +1,13 @@
+# Streamlit runtime settings, applied automatically by `streamlit run app.py`.
+#
+# No [theme] section on purpose: without one, Streamlit follows the viewer's own
+# Light / Dark / "Use system setting" choice (☰ menu -> Settings -> Appearance).
+# Setting a theme here would override that and lock everyone into one mode.
+
+[server]
+# Do not try to open a browser tab on the machine running the server.
+headless = true
+
+[browser]
+# Keep usage telemetry off.
+gatherUsageStats = false

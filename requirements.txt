@@ -1,0 +1,31 @@
+# SmartBite AI dependencies.
+# Install with:  pip install -r requirements.txt
+# Versions are pinned to the ones the project was developed and tested with.
+
+# --- Web UI ---
+streamlit==1.58.0
+
+# --- Databases ---
+# pymongo is the MongoDB driver (it also provides bson).
+# chromadb is the local vector store for semantic search and user memories.
+pymongo==4.17.0
+chromadb==1.5.9
+
+# --- AI agent workflow ---
+# langgraph runs the chatbot's state graph; the two langchain packages are the
+# LLM providers, selected with LLM_PROVIDER in .env (openai or gemini).
+langgraph==1.2.7
+langchain-openai==1.3.3
+langchain-google-genai==4.2.6
+
+# --- Security and configuration ---
+# bcrypt hashes passwords; python-dotenv loads .env.
+bcrypt==5.0.0
+python-dotenv==1.2.2
+
+# --- Analytics and charts ---
+pandas==3.0.3
+plotly==6.8.0
+
+# --- Development only (not needed to run the app) ---
+pytest==9.1.1

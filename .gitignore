@@ -1,0 +1,32 @@
+# Secrets - never commit real credentials (use .env.example as the template)
+.env
+.streamlit/secrets.toml
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Local databases and generated data
+chroma_db/*
+!chroma_db/.gitkeep
+
+# Project reports and personal notes (kept outside the repository)
+*.pdf
+*.docx
+LEARNING.md
+
+# Editors / OS / tooling
+.vscode/
+.idea/
+.claude/
+.DS_Store
+Thumbs.db
+*.log
